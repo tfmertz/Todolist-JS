@@ -20,6 +20,10 @@ $(document).ready(function() {
 
 var makeCompleteListeners = function() {
   $('.renewTask').unbind('click');
+  $('.deleteTask').unbind('click');
+  $('.deleteTask').click(function() {
+    $(this).parent().remove();
+  });
   $('.renewTask').click(function() {
     $(".inprogress").append("<li><span class='glyphicon glyphicon-ok clickable addTask'></span>" + $(this).parent().text() + "</li>");
     $(this).parent().remove();
