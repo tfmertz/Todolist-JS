@@ -31,10 +31,21 @@ ul {
 }
 
 .clickable {
-  color: #3388ff;
   cursor: pointer;
 }
 
 .clickable:hover {
   text-decoration: underline;
+}
+
+.addTask {
+  color: #3388ff;
+}
+
+.deleteTask {
+  color: #D44444;
+}
+
+.renewTask {
+  color: #888;
 }
