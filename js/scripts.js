@@ -9,7 +9,7 @@ $(document).ready(function() {
     $(".clickable").last().click(function() {
       $(this).remove();
       var testTaskItem = task.item;
-      $(".complete").append("<li>" + task.item + "</li>").addClass("complete");
+      $(".complete").prepend("<li>" + task.item + "</li>").addClass("complete");
     });
 
     event.preventDefault();

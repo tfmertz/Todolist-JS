@@ -1,7 +1,12 @@
-.in-progress {
+.inprogress {
   color: #000;
+  min-height: 100px;
 }
 
 .complete {
   color: #ddd;
+}
+
+.jumbotron {
+  text-align: center;
 }
