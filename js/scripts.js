@@ -4,13 +4,16 @@ $(document).ready(function() {
 
     var task = {item: taskInput};
 
-    $(".inprogress").append("<li class='clickable'>" + task.item + "</li>");
+    $(".inprogress").append("<li class='clickable'>" + task.item + "</li>").addClass("in-progress");
 
-    // $(".clickable").last().
+    $(".clickable").last().click(function() {
+      $(this).remove();
+      var testTaskItem = task.item;
+      $(".complete").append("<li>" + task.item + "</li>").addClass("complete");
+    });
 
     event.preventDefault();
   });
-
 
 
 

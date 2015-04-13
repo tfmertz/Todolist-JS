@@ -1,3 +1,7 @@
-.clickable {
-  
+.in-progress {
+  color: #000;
+}
+
+.complete {
+  color: #ddd;
 }
