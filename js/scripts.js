@@ -4,10 +4,10 @@ $(document).ready(function() {
 
     var task = {item: taskInput};
 
-    $(".inprogress").append("<li class='clickable'>" + task.item + "</li>").addClass("in-progress");
+    $(".inprogress").append("<li><span class='glyphicon glyphicon-ok clickable'></span>" + task.item + "</li>").addClass("in-progress");
 
     $(".clickable").last().click(function() {
-      $(this).remove();
+      $(this).parent().remove();
       var testTaskItem = task.item;
       $(".complete").prepend("<li>" + task.item + "</li>").addClass("complete");
     });

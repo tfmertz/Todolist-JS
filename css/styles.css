@@ -8,6 +8,10 @@ ul {
   list-style-type: none;
 }
 
+.glyphicon {
+  padding-right: 5px;
+}
+
 .inprogress {
   color: #000;
   min-height: 100px;
