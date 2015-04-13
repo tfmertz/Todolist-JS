@@ -12,6 +12,9 @@ $(document).ready(function() {
       $(".complete").prepend("<li>" + task.item + "</li>").addClass("complete");
     });
 
+    $("input#task").val("").focus();
+
+
     event.preventDefault();
   });
 

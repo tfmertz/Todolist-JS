@@ -1,3 +1,13 @@
+h3 {
+  border-bottom: solid 1px lightgrey;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
 .inprogress {
   color: #000;
   min-height: 100px;
@@ -5,8 +15,22 @@
 
 .complete {
   color: #ddd;
+  text-decoration: line-through;
 }
 
 .jumbotron {
   text-align: center;
+}
+
+.left-border {
+  border-left: solid 1px lightgrey;
+}
+
+.clickable {
+  color: #3388ff;
+  cursor: pointer;
+}
+
+.clickable:hover {
+  text-decoration: underline;
 }
